@@ -83,8 +83,17 @@
         <p>"Fantastic for travelers! The Pocket Drone is easy to operate and takes amazing aerial photos." - Laura Black</p>
     </div>
 
-    <footer>
-        <p>Contact us at <a href="mailto:info@techreviews.com">info@techreviews.com</a></p>
-    </footer>
+   <footer>
+    <h3>Contact Us</h3>
+    <form action="send_email.php" method="POST">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" required></textarea><br><br>
+        <input type="submit" value="Send Message">
+    </form>
+</footer>
 </body>
 </html>
